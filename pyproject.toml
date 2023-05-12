@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dist-ml-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Reuben John <rmjohn2@ncsu.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyshark = "^0.5.3"
+progressbar2 = "^4.2.0"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+analyze = "dist_ml_analysis.main:main"
